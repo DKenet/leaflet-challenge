@@ -1,0 +1,16 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#map,
+body,
+html {
+  height: 100%;
+}
+.legendbox{
+ height:1em;
+ display:inline-block;
+ width:1em;
+
+}
