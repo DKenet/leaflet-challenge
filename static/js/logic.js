@@ -51,7 +51,7 @@ fetch('https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojso
             // loop through our depth intervals and generate a label with a colored square for each interval
             for (var i = 0; i < depths.length; i++) {
                 div.innerHTML +=
-                    '<i class="legendbox" style="background:' + getColor(depths[i] + 1) + '"></i> ' +
+                    '<i class="legendbox" style="background:' + getColor(depths[i] + 1) + '"></i> ' +            //using a css class to format the colored squares
                     depths[i] + (depths[i + 1] ? '&ndash;' + depths[i + 1] + ' km<br>' : '+ km');
             }
             return div;
